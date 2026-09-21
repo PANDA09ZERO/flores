@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.brutal-mode {
+  background-color: #fffbf0;
+  color: #1a1a1a;
+  font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brutal-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px;
+  border: 6px solid #1a1a1a;
+  border-radius: 16px;
+  background: #fffbf0;
+  box-shadow: 10px 10px 0px #1a1a1a;
+  max-width: 800px;
+  width: 90%;
+}
+
+.brutal-title-main {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #e85d04;
+  text-shadow: 4px 4px 0px #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.brutal-subtitle {
+  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: #003049;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 4px solid #003049;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.brutal-divider {
+  height: 8px;
+  background: #e85d04;
+  border: none;
+  border-radius: 4px;
+  margin: 25px 0;
+  box-shadow: 4px 4px 0px #1a1a1a;
+}
+
+.brutal-selector {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.brutal-style-btn {
+  padding: 18px 36px;
+  border: 5px solid #003049;
+  border-radius: 12px;
+  background: #fffbf0;
+  color: #003049;
+  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 6px 6px 0px #003049;
+  transition: all 0.2s ease;
+}
+
+.brutal-style-btn:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0px #003049;
+  background: #003049;
+  color: #fffbf0;
+}
+
+.brutal-style-btn.active {
+  background: #e85d04;
+  border-color: #e85d04;
+  color: #fffbf0;
+  box-shadow: 6px 6px 0px #1a1a1a;
+}
+
+.brutal-description {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #1a1a1a;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.brutal-btn-primary {
+  display: inline-block;
+  padding: 20px 48px;
+  border: 6px solid #1a1a1a;
+  border-radius: 12px;
+  background: #e85d04;
+  color: #fffbf0;
+  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0px #1a1a1a;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.brutal-btn-primary:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #1a1a1a;
+  background: #d62828;
+}
+
+.brutal-btn-primary:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0px #1a1a1a;
+}
+
+.brutal-card {
+  border: 5px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  background: #fffbf0;
+  box-shadow: 8px 8px 0px #1a1a1a;
+  margin: 20px;
+  max-width: 600px;
+}
+
+.brutal-card h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: #e85d04;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 0px #1a1a1a;
+}
+
+.brutal-card p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.brutal-glow {
+  text-shadow: 0 0 20px rgba(232, 93, 4, 0.5);
+}
+
+.brutal-garland {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.brutal-garland-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(
+    to right,
+    #e85d04 0px, #e85d04 20px,
+    #003049 20px, #003049 40px,
+    #d62828 40px, #d62828 60px,
+    #fffbf0 60px, #fffbf0 80px
+  );
+}
+
+@media screen and (max-width: 574px) {
+  .brutal-title-main {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  .brutal-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .brutal-style-btn {
+    font-size: 1rem;
+    padding: 14px 24px;
+  }
+  .brutal-btn-primary {
+    font-size: 1.2rem;
+    padding: 16px 32px;
+  }
+  .brutal-header {
+    padding: 20px;
+  }
+}
