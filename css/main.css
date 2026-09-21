@@ -1609,8 +1609,69 @@ body {
 } /*# sourceMappingURL=main.css.map */
 
 /* ============================================
-   VISIBILIDAD UNIVERSAL - TODAS AMARILLAS
+   FLORES AMARILLAS - POSICIONADAS Y VISIBLES
    ============================================ */
+.flower--1 {
+  left: 10% !important;
+  transform: rotate(2deg) !important;
+  bottom: 10vmin !important;
+}
+.flower--2 {
+  left: 50% !important;
+  transform: translateX(-50%) rotate(20deg) !important;
+  bottom: 10vmin !important;
+}
+.flower--3 {
+  left: 85% !important;
+  transform: translateX(-50%) rotate(-15deg) !important;
+  bottom: 10vmin !important;
+}
+.flower {
+  position: absolute !important;
+  bottom: 10vmin !important;
+  transform-origin: bottom center !important;
+  z-index: 10 !important;
+}
+.flowers {
+  position: relative !important;
+  transform: scale(1.0) !important;
+}
+.night { z-index: -1 !important; }
+
+/* TODAS AMARILLAS */
+.flower__leaf { background-color: #ffd700 !important; }
+.flower__line__leaf { background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #ffd700) !important; }
+.flower__grass { --c: #ffd700 !important; }
+.flower__g-long__top { border-right-color: #ffd700 !important; }
+.flower__g-long__bottom { background-image: linear-gradient(to top, transparent 30%, #ffd700) !important; }
+.flower__g-right .leaf { border-left-color: #ffd700 !important; }
+.flower__g-front__leaf { background-image: linear-gradient(to bottom right, #ffd700 50%, transparent 50%) !important; }
+.flower__g-fr .leaf { border-left-color: #ffd700 !important; }
+.flower__g-fr__leaf { background-image: linear-gradient(to bottom right, #ffd700 45%, transparent 50%) !important; }
+.long-g .leaf { border-left-color: #ffd700 !important; }
+.flower__grass__leaf { background-image: linear-gradient(to top, transparent, transparent 30%, #ffd700) !important; }
+.flower__rosa-stem, .flower__lirio-stem { background: linear-gradient(to top, #ffd700, #ffaa00, #ffd700) !important; }
+.flower__rosa-leaf, .flower__lirio-leaf { background: linear-gradient(to top, #ffd700, #ffaa00) !important; }
+.flower__g-front__line { background-image: linear-gradient(to top, transparent, #ffd700, transparent 100%) !important; }
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .flowers { transform: scale(0.8) !important; }
+  .flower { bottom: 8vmin !important; }
+}
+@media only screen and (max-width: 480px) {
+  .flowers { transform: scale(0.6) !important; }
+  .flower { bottom: 6vmin !important; }
+}
+
+/* Reset */
+body, h1, p { margin: 0; padding: 0; }
+body { font-family: 'Arial', sans-serif; background-color: #9a7171; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 2em; line-height: 1.5; margin-bottom: 20px; }
+@media screen and (max-width: 600px) { h1 { font-size: 1.5em; } }
+@media screen and (min-width: 601px) and (max-width: 1024px) { h1 { font-size: 1.8em; } }
+@media screen and (min-width: 1025px) { h1 { font-size: 2em; } }
 .flower__leaf { background-color: #ffd700 !important; }
 .flower__line__leaf { background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #ffd700) !important; }
 .flower__grass { --c: #ffd700 !important; }
