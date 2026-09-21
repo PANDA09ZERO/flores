@@ -9,12 +9,6 @@ body.brutal-mode {
   background-color: #fffbf0;
   color: #1a1a1a;
   font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .brutal-header {
