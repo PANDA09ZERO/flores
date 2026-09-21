@@ -2378,3 +2378,45 @@ h1 {
     font-size: 0.9rem !important;
   }
 }
+
+/* ============================================
+   DISTRIBUCIÓN DE FLORES - MISMO ALTO Y VISIBLE
+   ============================================ */
+.flower--1 {
+  left: 10% !important;
+  transform: rotate(2deg) !important;
+  bottom: 10vmin !important;
+}
+.flower--2 {
+  left: 50% !important;
+  transform: translateX(-50%) rotate(20deg) !important;
+  bottom: 10vmin !important;
+}
+.flower--3 {
+  left: 85% !important;
+  transform: translateX(-50%) rotate(-15deg) !important;
+  bottom: 10vmin !important;
+}
+.flower {
+  position: absolute !important;
+  bottom: 10vmin !important;
+  transform-origin: bottom center !important;
+  z-index: 10 !important;
+}
+.flowers {
+  position: relative !important;
+  transform: scale(1.0) !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+.night {
+  z-index: -1 !important;
+}
+@media only screen and (max-width: 768px) {
+  .flowers { transform: scale(0.8) !important; }
+  .flower--1, .flower--2, .flower--3 { bottom: 8vmin !important; }
+}
+@media only screen and (max-width: 480px) {
+  .flowers { transform: scale(0.6) !important; }
+  .flower--1, .flower--2, .flower--3 { bottom: 6vmin !important; }
+}
