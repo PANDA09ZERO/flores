@@ -1613,10 +1613,11 @@ body {
    ============================================ */
 .flower--rosa {
   position: absolute;
-  bottom: 10vmin;
-  left: 20%;
+  bottom: 12vmin;
+  left: 5%;
+  transform: scale(0.7);
   transform-origin: bottom center;
-  z-index: 10;
+  z-index: 15;
   --fl-speed: 0.8s;
   -webkit-animation: moving-flower-rosa 5s linear infinite;
   animation: moving-flower-rosa 5s linear infinite;
@@ -1701,10 +1702,11 @@ body {
    ============================================ */
 .flower--lirio {
   position: absolute;
-  bottom: 10vmin;
-  right: 20%;
+  bottom: 12vmin;
+  right: 5%;
+  transform: scale(0.7);
   transform-origin: bottom center;
-  z-index: 10;
+  z-index: 15;
   --fl-speed: 0.8s;
   -webkit-animation: moving-flower-lirio 6s linear infinite;
   animation: moving-flower-lirio 6s linear infinite;
