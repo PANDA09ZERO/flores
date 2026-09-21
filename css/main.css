@@ -2167,3 +2167,191 @@ h1 {
 }
 
 /* Agregar más estilos según sea necesario */
+
+/* ============================================
+   RESPONSIVE PARA CELULARES
+   ============================================ */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .flowers {
+    transform: scale(0.5);
+    margin-bottom: 0;
+  }
+  .flower {
+    bottom: 5vmin !important;
+  }
+  .flower--rosa-1 { transform: scale(0.4); bottom: 5vmin !important; }
+  .flower--rosa-2 { transform: scale(0.35); bottom: 3vmin !important; }
+  .flower--rosa-3 { transform: scale(0.38); bottom: 6vmin !important; }
+  .flower--rosa-4 { transform: scale(0.42); bottom: 4vmin !important; }
+  .flower--lirio-1 { transform: scale(0.4); bottom: 5vmin !important; }
+  .flower--lirio-2 { transform: scale(0.32); bottom: 3vmin !important; }
+  .flower--lirio-3 { transform: scale(0.35); bottom: 6vmin !important; }
+  .flower--lirio-4 { transform: scale(0.38); bottom: 4vmin !important; }
+  .flower__g-long { transform: scale(0.6); }
+  .flower__g-right { transform: scale(0.6); }
+  .flower__g-front { transform: scale(0.6); }
+  .flower__g-fr { transform: scale(0.6); }
+  .long-g { transform: scale(0.6); }
+  .flower__grass { display: none; }
+  .flower__line { height: 30vmin !important; }
+}
+
+@media only screen and (max-width: 480px) {
+  .flowers {
+    transform: scale(0.35);
+  }
+  .flower--rosa-1 { transform: scale(0.3); }
+  .flower--rosa-2 { transform: scale(0.28); }
+  .flower--rosa-3 { transform: scale(0.3); }
+  .flower--rosa-4 { transform: scale(0.32); }
+  .flower--lirio-1 { transform: scale(0.3); }
+  .flower--lirio-2 { transform: scale(0.25); }
+  .flower--lirio-3 { transform: scale(0.28); }
+  .flower--lirio-4 { transform: scale(0.3); }
+  .night {
+    filter: blur(0.2vmin);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .flowers {
+    transform: scale(0.75);
+  }
+  .flower--rosa-1 { transform: scale(0.5); }
+  .flower--rosa-2 { transform: scale(0.42); }
+  .flower--rosa-3 { transform: scale(0.45); }
+  .flower--rosa-4 { transform: scale(0.48); }
+  .flower--lirio-1 { transform: scale(0.48); }
+  .flower--lirio-2 { transform: scale(0.38); }
+  .flower--lirio-3 { transform: scale(0.42); }
+  .flower--lirio-4 { transform: scale(0.45); }
+}
+
+/* ============================================
+   RESPONSIVE - ESTILO BRUTAL PARA CELULARES
+   ============================================ */
+@media screen and (max-width: 480px) {
+  body.brutal-mode {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .brutal-header {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-width: 4px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #1a1a1a;
+    width: 95%;
+  }
+  .brutal-title-main {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px #1a1a1a;
+  }
+  .brutal-description {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .brutal-divider {
+    height: 5px;
+    margin: 15px 0;
+  }
+  .brutal-selector {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brutal-style-btn {
+    width: 80%;
+    padding: 14px 20px;
+    font-size: 0.9rem;
+    border-width: 3px;
+    box-shadow: 4px 4px 0px #003049;
+  }
+  .brutal-style-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #003049;
+  }
+  .brutal-btn-primary {
+    font-size: 1rem;
+    padding: 14px 24px;
+    border-width: 4px;
+    box-shadow: 5px 5px 0px #1a1a1a;
+    width: 80%;
+    text-align: center;
+  }
+  .brutal-btn-primary:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #1a1a1a;
+  }
+  .brutal-card {
+    padding: 15px;
+    margin: 10px 15px;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #1a1a1a;
+  }
+  .brutal-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  .brutal-card p {
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .brutal-title-main {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .brutal-style-btn {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    width: 90%;
+  }
+  .brutal-btn-primary {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .brutal-title-main {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+  .brutal-selector {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .brutal-style-btn {
+    font-size: 1rem;
+    padding: 14px 24px;
+  }
+  .brutal-btn-primary {
+    font-size: 1.1rem;
+    padding: 16px 30px;
+  }
+}
+
+/* Responsive para style.css original */
+@media screen and (max-width: 480px) {
+  body:not(.brutal-mode) {
+    height: 100vh;
+    padding: 20px;
+  }
+  .greetings {
+    font-size: 3rem !important;
+  }
+  .description {
+    font-size: 1.2rem !important;
+  }
+  .button a {
+    font-size: 0.9rem !important;
+  }
+}
