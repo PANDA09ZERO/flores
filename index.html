@@ -9,7 +9,7 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
 </head>
-<body id="body-page">
+<body id="body-page" class="brutal-mode">
     <div class="brutal-header">
         <h1 class="brutal-title-main">Flowers</h1>
         <div class="brutal-divider"></div>
@@ -17,46 +17,17 @@
             POR SI NADIE TE DIO FLORES HOY :)
         </p>
         <div class="brutal-divider"></div>
-        <div class="brutal-selector">
-            <button class="brutal-style-btn active" id="btn-original" onclick="setStyle('original')">🌼 Original</button>
-            <button class="brutal-style-btn" id="btn-brutal" onclick="setStyle('brutal')">🔥 Brutalismo Suave</button>
-        </div>
-        <div class="brutal-divider"></div>
         <div class="button">
             <a href="flower.html" class="brutal-btn-primary">TOUCH ME XD</a>
         </div>
     </div>
 
-    <div class="brutal-card">
-        <h3>🌹 Rosa</h3>
-        <p>Una rosa roja con pétalo suave y centro dorado.</p>
-    </div>
-    <div class="brutal-card">
-        <h3>🪷 Lirio</h3>
-        <p>Un lirio morado con tallo largo y espatas verdes.</p>
-    </div>
-    <div class="brutal-card">
-        <h3>🌻 Amarilla</h3>
-        <p>Las flores amarillas clásicas con animación suave.</p>
-    </div>
-
     <script>
-        function setStyle(style) {
-            const body = document.getElementById('body-page');
-            const btnOrig = document.getElementById('btn-original');
-            const btnBrutal = document.getElementById('btn-brutal');
-
-            if (style === 'brutal') {
-                body.classList.add('brutal-mode');
-                body.style.backgroundImage = 'none';
-                btnBrutal.classList.add('active');
-                btnOrig.classList.remove('active');
-            } else {
-                body.classList.remove('brutal-mode');
-                btnOrig.classList.add('active');
-                btnBrutal.classList.remove('active');
-            }
-        }
+        onload = () => {
+            document.body.classList.add('brutal-mode');
+            const body = document.getElementById('flower-body');
+            if (body) body.classList.add('brutal-mode');
+        };
     </script>
 </body>
 </html>
