@@ -1611,76 +1611,25 @@ body {
 /* ============================================
    VISIBILIDAD UNIVERSAL - TODAS AMARILLAS
    ============================================ */
-.flower__leaf {
-  background-color: #ffd700 !important;
-  background-image: linear-gradient(to bottom, #ffd700, #ffaa00) !important;
-}
-.flower__line__leaf {
-  background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #ffd700) !important;
-}
-.flower__grass {
-  --c: #ffd700 !important;
-}
+.flower__leaf { background-color: #ffd700 !important; }
+.flower__line__leaf { background-image: linear-gradient(to top, rgba(20, 117, 122, 0.4), #ffd700) !important; }
+.flower__grass { --c: #ffd700 !important; }
 .flower__g-long__top { border-right-color: #ffd700 !important; }
 .flower__g-long__bottom { background-image: linear-gradient(to top, transparent 30%, #ffd700) !important; }
-.flower__g-right .leaf {
-  border-left-color: #ffd700 !important;
-  -webkit-mask-image: linear-gradient(to top, transparent 30%, #ffd700 60%) !important;
-}
-.flower__g-front__leaf {
-  background-image: linear-gradient(to bottom left, transparent, #1a1a1a),
-    linear-gradient(to bottom right, #ffd700 50%, transparent 50%, transparent) !important;
-  -webkit-mask-image: linear-gradient(to bottom right, #ffd700 50%, transparent 50%, transparent) !important;
-}
-.flower__g-fr .leaf {
-  border-left-color: #ffd700 !important;
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, #ffd700 50%) !important;
-}
-.flower__g-fr__leaf {
-  background-image: linear-gradient(to bottom left, transparent, #1a1a1a 98%),
-    linear-gradient(to bottom right, #ffd700 45%, transparent 50%, transparent) !important;
-}
-.long-g .leaf {
-  border-left-color: #ffd700 !important;
-  -webkit-mask-image: linear-gradient(to top, transparent 20%, #1a1a1a) !important;
-}
-.flower__grass__leaf {
-  background-image: linear-gradient(to top, transparent, transparent 30%, #ffd700) !important;
-}
-.flower__rosa-stem,
-.flower__lirio-stem {
-  background: linear-gradient(to top, #ffd700, #ffaa00, #ffd700) !important;
-}
-.flower__rosa-leaf,
-.flower__lirio-leaf {
-  background: linear-gradient(to top, #ffd700, #ffaa00) !important;
-}
-.flower__g-front__line {
-  background-image: linear-gradient(to top, transparent, #ffd700, transparent 100%) !important;
-}
-.night {
-  background-image: radial-gradient(ellipse at top, transparent 0%, #000),
-    radial-gradient(ellipse at bottom, #000, rgba(145, 233, 255, 0.2)),
-    repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
-    repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
-    repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
-  z-index: -1;
-}
-.flowers {
-  transform: scale(1.0) !important;
-}
-.flower {
-  bottom: 10vmin !important;
-}
-@media only screen and (max-width: 768px) {
-  .flowers { transform: scale(0.8) !important; }
-  .flower { bottom: 8vmin !important; }
-}
-@media only screen and (max-width: 480px) {
-  .flowers { transform: scale(0.6) !important; }
-  .flower { bottom: 6vmin !important; }
-}
+.flower__g-right .leaf { border-left-color: #ffd700 !important; }
+.flower__g-front__leaf { background-image: linear-gradient(to bottom right, #ffd700 50%, transparent 50%, transparent) !important; }
+.flower__g-fr .leaf { border-left-color: #ffd700 !important; }
+.flower__g-fr__leaf { background-image: linear-gradient(to bottom right, #ffd700 45%, transparent 50%, transparent) !important; }
+.long-g .leaf { border-left-color: #ffd700 !important; }
+.flower__grass__leaf { background-image: linear-gradient(to top, transparent, transparent 30%, #ffd700) !important; }
+.flower__rosa-stem, .flower__lirio-stem { background: linear-gradient(to top, #ffd700, #ffaa00, #ffd700) !important; }
+.flower__rosa-leaf, .flower__lirio-leaf { background: linear-gradient(to top, #ffd700, #ffaa00) !important; }
+.flower__g-front__line { background-image: linear-gradient(to top, transparent, #ffd700, transparent 100%) !important; }
+.night { z-index: -1; }
+.flowers { transform: scale(1.0) !important; }
+.flower { bottom: 10vmin !important; }
+@media only screen and (max-width: 768px) { .flowers { transform: scale(0.8) !important; } .flower { bottom: 8vmin !important; } }
+@media only screen and (max-width: 480px) { .flowers { transform: scale(0.6) !important; } .flower { bottom: 6vmin !important; } }
 
 /* ============================================
    FLORES NUEVAS: ROSAS (4)

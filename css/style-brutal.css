@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+/* Solo aplica brutal en index.html, no en flower.html */
 body.brutal-mode {
   background-color: #fffbf0;
   color: #1a1a1a;
@@ -32,20 +28,6 @@ body.brutal-mode {
   text-shadow: 4px 4px 0px #1a1a1a;
   margin-bottom: 20px;
   line-height: 1.1;
-}
-
-.brutal-subtitle {
-  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 4px;
-  color: #003049;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  border: 4px solid #003049;
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 8px;
-  box-shadow: 5px 5px 0px #1a1a1a;
 }
 
 .brutal-divider {
@@ -161,51 +143,23 @@ body.brutal-mode {
   line-height: 1.6;
 }
 
-.brutal-glow {
-  text-shadow: 0 0 20px rgba(232, 93, 4, 0.5);
-}
-
-.brutal-garland {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.brutal-garland-line {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: repeating-linear-gradient(
-    to right,
-    #e85d04 0px, #e85d04 20px,
-    #003049 20px, #003049 40px,
-    #d62828 40px, #d62828 60px,
-    #fffbf0 60px, #fffbf0 80px
-  );
-}
-
 @media screen and (max-width: 574px) {
-  .brutal-title-main {
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-  }
-  .brutal-subtitle {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-  }
-  .brutal-style-btn {
-    font-size: 1rem;
-    padding: 14px 24px;
-  }
-  .brutal-btn-primary {
-    font-size: 1.2rem;
-    padding: 16px 32px;
-  }
-  .brutal-header {
-    padding: 20px;
-  }
+  .brutal-title-main { font-size: 2.5rem; letter-spacing: 3px; }
+  .brutal-description { font-size: 1.2rem; }
+  .brutal-style-btn { font-size: 1rem; padding: 14px 24px; }
+  .brutal-btn-primary { font-size: 1.2rem; padding: 16px 32px; }
+  .brutal-header { padding: 20px; }
+}
+
+@media screen and (max-width: 480px) {
+  .brutal-title-main { font-size: 2rem; letter-spacing: 2px; }
+  .brutal-style-btn { width: 80%; }
+  .brutal-btn-primary { font-size: 1rem; padding: 14px 24px; width: 80%; }
+  .brutal-card { padding: 15px; margin: 10px 15px; }
+  .brutal-card h3 { font-size: 1.3rem; }
+  .brutal-card p { font-size: 0.9rem; }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .brutal-title-main { font-size: 3rem; letter-spacing: 4px; }
 }
